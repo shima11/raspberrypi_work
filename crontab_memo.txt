@@ -1,0 +1,25 @@
+PATH=$PATH:/home/pi/.rbenv/shims
+#*/1 * * * * /bin/bash -lc 'cd /home/pi/work; sh hoge.sh 1> log.txt 2> error.txt'
+#00 00 * * * /bin/bash -lc 'export PATH="$HOME/.rbenv/bin:$PATH"; eval "$(rbenv init -)"; cd /hom$
+#15 00 * * * /bin/bash -lc 'export PATH="$HOME/.rbenv/bin:$PATH"; eval "$(rbenv init -)"; cd /hom$
+#30 00 * * * /bin/bash -lc 'export PATH="$HOME/.rbenv/bin:$PATH"; eval "$(rbenv init -)"; cd /hom$
+#45 00 * * * /bin/bash -lc 'export PATH="$HOME/.rbenv/bin:$PATH"; eval "$(rbenv init -)"; cd /hom$
+
+#00 01 * * * /bin/bash -lc 'export PATH="$HOME/.rbenv/bin:$PATH"; eval "$(rbenv init -)"; cd /hom$
+#00 02 * * * /bin/bash -lc 'export PATH="$HOME/.rbenv/bin:$PATH"; eval "$(rbenv init -)"; cd /hom$
+#00 03 * * * /bin/bash -lc 'export PATH="$HOME/.rbenv/bin:$PATH"; eval "$(rbenv init -)"; cd /hom$
+#00 04 * * * /bin/bash -lc 'export PATH="$HOME/.rbenv/bin:$PATH"; eval "$(rbenv init -)"; cd /hom$
+#00 05 * * * /bin/bash -lc 'export PATH="$HOME/.rbenv/bin:$PATH"; eval "$(rbenv init -)"; cd /hom$
+#00 06 * * * /bin/bash -lc 'export PATH="$HOME/.rbenv/bin:$PATH"; eval "$(rbenv init -)"; cd /hom$
+
+00 00 * * * /bin/bash -lc 'cd /home/pi/work; sh crawler1.sh 1 1>> log1.txt 2>> error1.txt'
+15 00 * * * /bin/bash -lc 'cd /home/pi/work; sh crawler1.sh 2 1>> log1.txt 2>> error1.txt'
+30 00 * * * /bin/bash -lc 'cd /home/pi/work; sh crawler1.sh 3 1>> log1.txt 2>> error1.txt'
+45 00 * * * /bin/bash -lc 'cd /home/pi/work; sh crawler1.sh 4 1>> log1.txt 2>> error1.txt'
+
+00 01 * * * /bin/bash -lc 'cd /home/pi/work; sh crawler2.sh 1 1>> log2.txt 2>> error2.txt'
+00 02 * * * /bin/bash -lc 'cd /home/pi/work; sh crawler2.sh 2 1>> log2.txt 2>> error2.txt'
+00 03 * * * /bin/bash -lc 'cd /home/pi/work; sh crawler2.sh 3 1>> log2.txt 2>> error2.txt'
+00 04 * * * /bin/bash -lc 'cd /home/pi/work; sh crawler2.sh 4 1>> log2.txt 2>> error2.txt'
+00 05 * * * /bin/bash -lc 'cd /home/pi/work; sh crawler2.sh 5 1>> log2.txt 2>> error2.txt'
+00 06 * * * /bin/bash -lc 'cd /home/pi/work; sh crawler2.sh 6 1>> log2.txt 2>> error2.txt'
